@@ -9,12 +9,12 @@ var isHappy = function(n) {
         let sum = 0;
 
         while(n > 0){
-            let digit = n % 10;   // get last digit
-            sum = sum + digit * digit;  // square and add
-            n = Math.floor(n / 10);  // remove last digit
+            let digit = n % 10;   
+            sum = sum + digit * digit;  
+            n = Math.floor(n / 10); 
         }
 
-        n = sum;   // repeat process with new number
+        n = sum;  
     }
 
     return n === 1;
