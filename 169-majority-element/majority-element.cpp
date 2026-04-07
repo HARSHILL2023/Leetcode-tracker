@@ -6,11 +6,14 @@ public:
         for (int i = 0; i < nums.size(); i++) {
             frequency[nums[i]]++;  
 
-        
-            if (frequency[nums[i]] > nums.size() / 2) {
-                return nums[i];
-            }
         }
+        int size=nums.size()/2;
+           for(auto it :frequency){
+            if(it.second> size){
+                return it.first;
+            }
+           }
+        
 
         return -1;
     }
