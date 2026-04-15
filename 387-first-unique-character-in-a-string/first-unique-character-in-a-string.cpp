@@ -7,7 +7,7 @@ public:
             for(int j = 0; j < s.size(); j++) {
                 if(i != j && s[i] == s[j]) {
                     count++;
-                    break; // no need to continue
+                    break; 
                 }
             }
             
