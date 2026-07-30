@@ -1,0 +1,27 @@
+// Last updated: 7/30/2026, 10:05:59 AM
+class Solution {
+public:
+    string firstPalindrome(vector<string>& words) {
+        for (const string& s : words) {
+            if (isPalindrome(s)) {
+                return s;
+            }
+        }
+        return "";
+    }
+
+private:
+    bool isPalindrome(const string& s) {
+        int left = 0;
+        int right = s.length() - 1;
+        
+        while (left < right) {
+            if (s[left] != s[right]) {
+                return false; 
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+};
