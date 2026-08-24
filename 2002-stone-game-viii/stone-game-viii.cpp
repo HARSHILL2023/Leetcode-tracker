@@ -1,7 +1,3 @@
-#include <vector>
-#include <numeric>
-#include <algorithm>
-
 class Solution {
 public:
     int stoneGameVIII(std::vector<int>& stones) {
